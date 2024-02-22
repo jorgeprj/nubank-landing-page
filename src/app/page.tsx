@@ -1,5 +1,14 @@
+import SectionAccount from "@/components/SectionAccount";
+import SectionHero from "@/components/SectionHero";
+import SectionServices from "@/components/SectionServices";
+
 export default function Home() {
   return (
-    <h1>Case Study</h1>
+    <>
+        <SectionHero/>
+        <SectionAccount/>
+        <SectionServices/>
+    </>
+
   );
 }

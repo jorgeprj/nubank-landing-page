@@ -7,8 +7,18 @@ const config: Config = {
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
-		extend: {},
+		extend: {
+			backgroundImage: {
+				'img_bg_hero': "url('../assets/bg-hero.png')"
+			},
+			colors: {
+				'primary': '#9700ea'
+			}
+		},
 	},
-	plugins: [],
+	plugins: [
+		require('tailwindcss-animated')
+	],
 };
+
 export default config;
